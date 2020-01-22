@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: virtualenv
+      run: apt install python3-virtualenv
     - name: venv
       run: python3 -m venv mkdocs
     - name: mkdocs
