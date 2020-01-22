@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: virtualenv
-      run: sudo apt install python3-virtualenv
+      run: sudo apt install python3-venv
     - name: venv
       run: python3 -m venv mkdocs
     - name: mkdocs
