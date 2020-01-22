@@ -16,6 +16,8 @@ jobs:
       run: sudo apt install python3-venv
     - name: venv
       run: python3 -m venv mkdocs
+    - name: source
+      run: source mkdocs/bin/activate
     - name: mkdocs
       run: pip install mkdocs
     - name: theme
