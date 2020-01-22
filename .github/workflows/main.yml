@@ -1,0 +1,24 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.5, 3.6, 3.7, 3.8]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: venv
+      run: python3 -m venv mkdocs
+    - name: mkdocs
+      run: pip install mkdocs
+    - name: theme
+      run: pip install mkdocs-material
+    - name: clean
+      run: mkdocs build --clean
+    - name: web
+      run: mkdocs build static/
