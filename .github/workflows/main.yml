@@ -20,8 +20,6 @@ jobs:
       run: source mkdocs/bin/activate
     - name: mkdocs
       run: pip install mkdocs
-    - name: theme
-      run: pip install mkdocs-material
     - name: clean
       run: mkdocs build --clean
     - name: web
