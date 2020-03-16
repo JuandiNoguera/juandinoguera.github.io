@@ -12,7 +12,7 @@ install:
 
 script: 
  - mkdocs build --clean
- - mkdocs build
+ - mkdocs build -d web/
 
 deploy:
   provider: pages
