@@ -13,6 +13,7 @@ install:
 script: 
  - mkdocs build --clean
  - mkdocs build -d web/
+ - mkdocs gh-deploy
 
 deploy:
   provider: pages
