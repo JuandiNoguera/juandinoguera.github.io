@@ -20,5 +20,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   keep-history: true
   local-dir: web/
+  fqdn: www.juandinoguera.tk
   on:
     branch: master
